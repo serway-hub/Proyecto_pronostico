@@ -1,7 +1,8 @@
-from docx2pdf import convert
+import pypandoc
 
-# Convertir un archivo específico
-convert('programacion FEBRERO.docx', "programacion_febrero.pdf")
+def convert_docx_to_pdf(docx_path, pdf_path):
+    pypandoc.convert_file(docx_path, 'pdf', outputfile=pdf_path)
 
-# Convertir todos los archivos en un directorio
-# convert("ruta_del_directorio")
+# Uso de la función
+convert_docx_to_pdf("Hoja de vida jorge luis final cst.docx", "Hoja_de_vida_jorge_luis.pdf")
+
