@@ -1,2 +1,11 @@
 __pycache__/
 *.pyc
+
+# Ignorar entornos virtuales
+pronostico_damis/lib/
+*.so
+*.dll
+*.pyc
+*.pyd
+pronostico_damis/lib/
+*.so
